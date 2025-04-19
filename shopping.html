@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembelian - Manikam Aksesoris</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="index.html" class="navbar-logo"
+        >UMKM<br />Manikam<span>Aksesoris</span>.</a
+      >
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="menu.html">Menu</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="testimoni.html">Testimoni</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="shopping.html" id="shopping-cart"
+          ><i data-feather="shopping-cart"></i
+        ></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Pembelian Section Start -->
+    <section class="menu pembelian">
+      <h2><span>Form</span> Pembelian</h2>
+      <p>
+        Silakan pilih produk yang Anda inginkan dan isi formulir pembelian
+        berikut.
+      </p>
+      <div class="row">
+        <!-- Kartu Produk -->
+        <div class="menu-card">
+          <img
+            src="img/menu/anting permata.jpg"
+            alt="Anting"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Anting Permata -</h3>
+          <p class="menu-card-price">IDR 25K</p>
+          <form class="form-produk" onsubmit="return kirimPesanan(event)">
+            <input type="hidden" name="produk" value="Anting Elegan" />
+            <input
+              type="text"
+              name="nama"
+              placeholder="Nama Lengkap"
+              required
+            />
+            <input
+              type="number"
+              name="jumlah"
+              placeholder="Jumlah"
+              min="1"
+              required
+            />
+            <textarea
+              name="alamat"
+              rows="2"
+              placeholder="Alamat Pengiriman"
+              required
+            ></textarea>
+            <button type="submit" class="btn-beli">Beli Sekarang</button>
+          </form>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/menu/bros.jpg" alt="Kalung" class="menu-card-img" />
+          <h3 class="menu-card-title">- Bros Permata -</h3>
+          <p class="menu-card-price">IDR 10K</p>
+          <form class="form-produk" onsubmit="return kirimPesanan(event)">
+            <input type="hidden" name="produk" value="Kalung Mewah" />
+            <input
+              type="text"
+              name="nama"
+              placeholder="Nama Lengkap"
+              required
+            />
+            <input
+              type="number"
+              name="jumlah"
+              placeholder="Jumlah"
+              min="1"
+              required
+            />
+            <textarea
+              name="alamat"
+              rows="2"
+              placeholder="Alamat Pengiriman"
+              required
+            ></textarea>
+            <button type="submit" class="btn-beli">Beli Sekarang</button>
+          </form>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/menu/cincin.jpg" alt="Cincin" class="menu-card-img" />
+          <h3 class="menu-card-title">- Cincin Permata -</h3>
+          <p class="menu-card-price">IDR 15K</p>
+          <form class="form-produk" onsubmit="return kirimPesanan(event)">
+            <input type="hidden" name="produk" value="Cincin Manikam" />
+            <input
+              type="text"
+              name="nama"
+              placeholder="Nama Lengkap"
+              required
+            />
+            <input
+              type="number"
+              name="jumlah"
+              placeholder="Jumlah"
+              min="1"
+              required
+            />
+            <textarea
+              name="alamat"
+              rows="2"
+              placeholder="Alamat Pengiriman"
+              required
+            ></textarea>
+            <button type="submit" class="btn-beli">Beli Sekarang</button>
+          </form>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/cincin.jpg" alt="Cincin" class="menu-card-img" />
+          <h3 class="menu-card-title">- Cincin Permata -</h3>
+          <p class="menu-card-price">IDR 15K</p>
+          <form class="form-produk" onsubmit="return kirimPesanan(event)">
+            <input type="hidden" name="produk" value="Cincin Manikam" />
+            <input
+              type="text"
+              name="nama"
+              placeholder="Nama Lengkap"
+              required
+            />
+            <input
+              type="number"
+              name="jumlah"
+              placeholder="Jumlah"
+              min="1"
+              required
+            />
+            <textarea
+              name="alamat"
+              rows="2"
+              placeholder="Alamat Pengiriman"
+              required
+            ></textarea>
+            <button type="submit" class="btn-beli">Beli Sekarang</button>
+          </form>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/menu/Kalung.jpg" alt="Cincin" class="menu-card-img" />
+          <h3 class="menu-card-title">- Kalung -</h3>
+          <p class="menu-card-price">IDR 30K</p>
+          <form class="form-produk" onsubmit="return kirimPesanan(event)">
+            <input type="hidden" name="produk" value="Cincin Manikam" />
+            <input
+              type="text"
+              name="nama"
+              placeholder="Nama Lengkap"
+              required
+            />
+            <input
+              type="number"
+              name="jumlah"
+              placeholder="Jumlah"
+              min="1"
+              required
+            />
+            <textarea
+              name="alamat"
+              rows="2"
+              placeholder="Alamat Pengiriman"
+              required
+            ></textarea>
+            <button type="submit" class="btn-beli">Beli Sekarang</button>
+          </form>
+        </div>
+
+        <div class="menu-card">
+          <img
+            src="img/menu/peniti manik.jpg"
+            alt="Cincin"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Peniti Manik -</h3>
+          <p class="menu-card-price">IDR 7K</p>
+          <form class="form-produk" onsubmit="return kirimPesanan(event)">
+            <input type="hidden" name="produk" value="Cincin Manikam" />
+            <input
+              type="text"
+              name="nama"
+              placeholder="Nama Lengkap"
+              required
+            />
+            <input
+              type="number"
+              name="jumlah"
+              placeholder="Jumlah"
+              min="1"
+              required
+            />
+            <textarea
+              name="alamat"
+              rows="2"
+              placeholder="Alamat Pengiriman"
+              required
+            ></textarea>
+            <button type="submit" class="btn-beli">Beli Sekarang</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Pembelian Section End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="menu.html">Menu</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="testimoni.html">Testimoni</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="pembelian.html">Pembelian</a>
+      </div>
+      <div class="credit">
+        <p>
+          Created by <a href="#">M.Lutfi073_AntoninaS310</a>. | &copy; 2025.
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Feather Icon -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Script Pembelian -->
+    <script>
+      function kirimPesanan(event) {
+        event.preventDefault();
+        const form = event.target;
+        const produk = form.produk.value;
+        const nama = form.nama.value;
+        const jumlah = form.jumlah.value;
+        const alamat = form.alamat.value;
+
+        alert(
+          `Pesanan untuk ${produk}\nNama: ${nama}\nJumlah: ${jumlah}\nAlamat: ${alamat}\n\nPesanan berhasil dikirim!`
+        );
+        form.reset();
+        return false;
+      }
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

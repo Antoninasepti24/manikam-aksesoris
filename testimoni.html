@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimoni - Manikam Aksesoris</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="index.html" class="navbar-logo"
+        >UMKM<br/>Manikam<span>Aksesoris</span>.</a
+      >
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="menu.html">Menu</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="testimoni.html">Testimoni</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="shopping.html" id="shopping-cart"
+          ><i data-feather="shopping-cart"></i
+        ></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+<section class="testimoni">
+    <!-- Konten Testimoni -->
+    <main class="content">
+      <h2>Berikan Ulasan Anda</h2>
+      <h2>Ulasan anda akan ditampilkan dalam bentuk Tabel Data Testimoni!</h2>
+      <form id="ulasanForm">
+        <input type="text" id="nama" placeholder="Nama Anda" required />
+        <input type="text" id="pekerjaan" placeholder="Pekerjaan" required />
+        <textarea
+          id="pesan"
+          placeholder="Tulis ulasan Anda..."
+          rows="4"
+          required
+        ></textarea>
+        <button type="submit">Kirim Ulasan</button>
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>Pekerjaan</th>
+            <th>Ulasan</th>
+          </tr>
+        </thead>
+        <tbody id="hasilUlasan"></tbody>
+        <tr>
+          <td>Antonina Septi Kristiana</td>
+          <td>Mahasiswa</td>
+          <td>
+            Barangnya bagus dan keren sekali, saya suka menggunakan barang lokal
+          </td>
+        </tr>
+        <tr>
+          <td>Muhammad Lutfi</td>
+          <td>Mahasiswa</td>
+          <td>
+            Asli karya lokal gaisss!!!
+          </td>
+        </tr>
+      </table>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="menu.html">Menu</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="testimoni.html">Testimoni</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+      <div class="credit">
+        <p>
+          Created by
+          <span style="color: #000; font-weight: bold">M.Lutfi073_AntoninaS310</span>. | &copy; 2025.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
